@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Web;
-
+using HtmlAgilityPack;
 
 namespace GUI.Helpers
 {
