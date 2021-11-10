@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GUI",
+    "\\GUI\\Helpers",
+    "\\GUI\\obj\\Debug",
+    "\\GUI\\obj\\Debug\\net5.0-windows"
   ],
+  "SelectedNode": "\\AdventOfCodeManager.sln",
   "PreviewInSolutionExplorer": false
 }

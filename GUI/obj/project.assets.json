@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dazzl\\source\\repos\\AdventOfCodeManager\\GUI\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\dazzl\\source\\repos\\AdventOfCodeManager\\GUI\\GUI.csproj",
+      "projectPath": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\dazzl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dazzl\\source\\repos\\AdventOfCodeManager\\GUI\\obj\\",
+      "outputPath": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
