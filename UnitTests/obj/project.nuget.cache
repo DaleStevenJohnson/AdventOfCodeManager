@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4QXLxXRjJArY+O/LDa99idgnS3Nkv73oYT0w0XpYoMzvcxb4HhBYBm83FHVoQikqqOFavDzQfpvofjLzk+2yrg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\UnitTests\\UnitTests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project GUI is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project GUI supports: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "GUI",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
