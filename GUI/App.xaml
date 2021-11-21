@@ -8,6 +8,15 @@
         <FontFamily x:Key="Festive">pack://application:,,,/Assets/Fonts/#Festive</FontFamily>
         <FontFamily x:Key="SyneMono">pack://application:,,,/Assets/Fonts/#SyneMono</FontFamily>
         <FontFamily x:Key="NotoSansMono">pack://application:,,,/Assets/Fonts/#NotoSansMono</FontFamily>
+
+        <Style x:Key="TextBox.Output" TargetType="TextBox">
+            <Setter Property="Background" Value="DarkGray"/>
+            <Setter Property="Foreground" Value="Green"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="{StaticResource NotoSansMono}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+        </Style>
         
         <Style x:Key="Grid.Default" TargetType="Grid">
             <Setter Property="Background" Value="Black"/>

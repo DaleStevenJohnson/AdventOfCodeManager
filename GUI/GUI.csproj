@@ -50,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.38" />
   </ItemGroup>
 

@@ -4,7 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
+        
         mc:Ignorable="d"
+        d:DataContext="{Binding Source={d:DesignInstance Type=local:MainViewModel}}"
         Title="MainWindow" Height="1080" Width="1920">
     
     <Grid Style="{StaticResource Grid.Default}">
@@ -24,6 +26,24 @@
                    Margin="10,10"
                    Style="{StaticResource TextBlock.Title}"
                    Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <local:PuzzleDaySelector Grid.Row="1"/>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Solve Part 1" Width="200" Height="80" Margin="100,0" Command="{Binding SolvePartCommand}" CommandParameter="1"/>
+                <Button Content="Solve Part 2" Width="200" Height="80" Margin="100,0" Command="{Binding SolvePartCommand}" CommandParameter="2"/>
+            </StackPanel>
+        </Grid>
+        
+
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -31,16 +51,21 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+                
+                
             </Grid.RowDefinitions>
             
             <TextBlock Text="Output"
                        Margin="10,10"
                        Style="{StaticResource TextBlock.Label}"
                        Grid.Row="0" Grid.Column="0"/>
-            
-           
+
+            <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
+                     Grid.Row="1" Grid.Column="0" Margin="20,0"
+                     Style="{StaticResource TextBox.Output}"
+                     Text="{Binding OutputText}"/>
+
         </Grid>
 
     </Grid>
