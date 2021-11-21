@@ -31,10 +31,13 @@ namespace GUI
         private void AppendOutput(string text)
         {
             OutputText += text;
+            
         }
 
+        
         private void OnSolvePartPressed(object args)
         {
+            OutputText = string.Empty;
             if (SelectedPuzzleDay == PuzzleDays.None)
             {
                 OutputSink.WriteLine($"{SelectedPuzzleDay}");
