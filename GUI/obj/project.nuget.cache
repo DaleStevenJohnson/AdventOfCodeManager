@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAU2omq4B3d2Ow44qIqwy/GH0aypMf2vRpoquEi9u9wN/llN3ZjS/Tes0Ceq36dUWfQ8OkXM6zjPeHo6UAZC9Q==",
+  "dgSpecHash": "eyTCflS6t+XAI/Mqy19qBjuC4n6fcVCBpYA1t9g2F9ZqmeRPW6me/CNV9xo4GqXsqSojZlZE1ZxM80Mr20ubow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\GUI\\GUI.csproj",
+  "projectFilePath": "C:\\Users\\dazzl\\source\\repos\\DaleStevenJohnson\\AdventOfCodeManager\\GUI\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dazzl\\.nuget\\packages\\htmlagilitypack\\1.11.38\\htmlagilitypack.1.11.38.nupkg.sha512"
   ],

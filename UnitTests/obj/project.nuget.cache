@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4QXLxXRjJArY+O/LDa99idgnS3Nkv73oYT0w0XpYoMzvcxb4HhBYBm83FHVoQikqqOFavDzQfpvofjLzk+2yrg==",
+  "dgSpecHash": "6xR7tSFQSuBTrZnP/5vH9CK8fHxU7mylk5O5v1rXh1hsPng7QmcGI0f54JMQOyli5O6/amBt2Ttd0DbgEvEVQw==",
   "success": false,
-  "projectFilePath": "C:\\Users\\dazzl\\Source\\Repos\\DaleStevenJohnson\\AdventOfCodeManager\\UnitTests\\UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\dazzl\\source\\repos\\DaleStevenJohnson\\AdventOfCodeManager\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
