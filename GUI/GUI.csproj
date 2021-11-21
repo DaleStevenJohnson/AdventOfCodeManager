@@ -7,7 +7,93 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Fonts\CutiveMono-Regular.ttf" />
+    <None Remove="Assets\Fonts\Festive-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-Thin.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono-VariableFont_wdth,wght.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_Condensed-Thin.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_ExtraCondensed-Thin.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Black.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Bold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-ExtraBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-ExtraLight.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Light.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Medium.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Regular.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-SemiBold.ttf" />
+    <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Thin.ttf" />
+    <None Remove="Assets\Fonts\SyneMono-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\CutiveMono-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Festive-Regular.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Black.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Bold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-ExtraBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-ExtraLight.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Light.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Medium.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Regular.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-SemiBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-Thin.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono-VariableFont_wdth,wght.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Black.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Bold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-ExtraBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-ExtraLight.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Light.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Medium.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Regular.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-SemiBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_Condensed-Thin.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Black.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Bold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-ExtraBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-ExtraLight.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Light.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Medium.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Regular.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-SemiBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_ExtraCondensed-Thin.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Black.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Bold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-ExtraBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-ExtraLight.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Light.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Medium.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Regular.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-SemiBold.ttf" />
+    <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Thin.ttf" />
+    <Resource Include="Assets\Fonts\SyneMono-Regular.ttf" />
   </ItemGroup>
 
 </Project>

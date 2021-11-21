@@ -4,6 +4,29 @@
              xmlns:local="clr-namespace:GUI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="CutiveMono">pack://application:,,,/Assets/Fonts/#CutiveMono</FontFamily>
+        <FontFamily x:Key="Festive">pack://application:,,,/Assets/Fonts/#Festive</FontFamily>
+        <FontFamily x:Key="SyneMono">pack://application:,,,/Assets/Fonts/#SyneMono</FontFamily>
+        <FontFamily x:Key="NotoSansMono">pack://application:,,,/Assets/Fonts/#NotoSansMono</FontFamily>
+        
+        <Style x:Key="Grid.Default" TargetType="Grid">
+            <Setter Property="Background" Value="Black"/>
+        </Style>
+        
+        <Style x:Key="TextBlock.Default" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="TextBlock.Label" TargetType="TextBlock" BasedOn="{StaticResource TextBlock.Default}">
+            <Setter Property="FontFamily" Value="{StaticResource SyneMono}"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Regular"/>
+        </Style>
+
+        <Style x:Key="TextBlock.Title" TargetType="TextBlock" BasedOn="{StaticResource TextBlock.Default}">
+            <Setter Property="FontFamily" Value="{StaticResource Festive}"/>
+            <Setter Property="FontSize" Value="70"/>
+            <Setter Property="FontWeight" Value="Regular"/>
+        </Style>
     </Application.Resources>
 </Application>
