@@ -42,31 +42,28 @@
                 <Button Content="Solve Part 2" Width="200" Height="80" Margin="100,0" Command="{Binding SolvePartCommand}" CommandParameter="2"/>
             </StackPanel>
         </Grid>
-        
 
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="8*"/>
-                
-                
-            </Grid.RowDefinitions>
-            
-            <TextBlock Text="Output"
-                       Margin="10,10"
-                       Style="{StaticResource TextBlock.Label}"
-                       Grid.Row="0" Grid.Column="0"/>
 
-            <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
-                     Grid.Row="1" Grid.Column="0" Margin="20,0"
-                     Style="{StaticResource TextBox.Output}"
-                     Text="{Binding OutputText}"/>
 
-        </Grid>
+
+        <TabControl Grid.Row="1" Grid.Column="1" Style="{StaticResource TabControl.Normal}">
+            <TabItem Header="Output" Style="{StaticResource TabItem.Normal}">
+
+                <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
+                         Margin="20,0"
+                         Style="{StaticResource TextBox.Output}"
+                         Text="{Binding OutputViewModel.OutputText}"/>
+            </TabItem>
+
+            <TabItem Header="Log" Style="{StaticResource TabItem.Normal}">
+
+                <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
+                         Margin="20,0"
+                         Style="{StaticResource TextBox.Output}"
+                         Text="{Binding OutputViewModel.LogText}"/>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>

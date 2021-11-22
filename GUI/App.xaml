@@ -17,7 +17,45 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
         </Style>
-        
+
+        <Style x:Key="TabItem.Normal" TargetType="{x:Type TabItem}">
+            <Setter Property="Foreground" Value="DarkGray"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TabItem}">
+                        <Grid>
+                            <Border Name="Border" Margin="20,0,10,0" Background="Transparent"
+                BorderBrush="Transparent" BorderThickness="1,1,1,1" CornerRadius="2">
+                                <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                            ContentSource="Header" Margin="12,2,12,2"
+                            RecognizesAccessKey="True">
+                                    
+                                </ContentPresenter>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground" Value="Goldenrod"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="White" />
+                                <Setter TargetName="Border" Property="BorderThickness" Value="1,1,1,0" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="DarkRed" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="Black" />
+                                <Setter Property="Foreground" Value="DarkGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TabControl.Normal" TargetType="TabControl">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
         <Style x:Key="Grid.Default" TargetType="Grid">
             <Setter Property="Background" Value="Black"/>
         </Style>

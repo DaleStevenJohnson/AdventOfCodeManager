@@ -1,7 +1,7 @@
 ﻿using System.Windows.Input;
 using GUI.Constants;
 using GUI.Helpers;
-using TeacherPlanner.Helpers;
+using GUI.Output;
 
 namespace GUI
 {
@@ -11,33 +11,28 @@ namespace GUI
         private PuzzleDays _selectedPuzzleDay;
 
         public ICommand SolvePartCommand { get; }
-        public MainViewModel()
+        public MainViewModel(OutputViewModel outputViewModel)
         {
+            OutputViewModel = outputViewModel;
             SelectedPuzzleDay = PuzzleDays.None;
             SolvePartCommand = new SimpleCommand(partNumber => OnSolvePartPressed(partNumber));
-            OutputSink.WriteLineEvent += (sender, text) => AppendOutput(text);
         }
+
+        public OutputViewModel OutputViewModel { get; }
+
         public PuzzleDays SelectedPuzzleDay 
         { 
             get => _selectedPuzzleDay; 
             set => RaiseAndSetIfChanged(ref _selectedPuzzleDay, value); 
         }
 
-        public string OutputText
-        {
-            get => _outputText;
-            set => RaiseAndSetIfChanged(ref _outputText, value);
-        }
-        private void AppendOutput(string text)
-        {
-            OutputText += text;
-            
-        }
+       
+        
 
         
         private void OnSolvePartPressed(object args)
         {
-            OutputText = string.Empty;
+            OutputViewModel.ClearOuputText();
             if (SelectedPuzzleDay == PuzzleDays.None)
             {
                 OutputSink.WriteLine($"{SelectedPuzzleDay}");
