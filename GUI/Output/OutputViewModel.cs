@@ -1,4 +1,7 @@
-﻿using GUI.Helpers;
+﻿using System.Diagnostics;
+using System.IO;
+using System.Windows.Input;
+using GUI.Helpers;
 
 namespace GUI.Output
 {
@@ -6,11 +9,22 @@ namespace GUI.Output
     {
         private string _outputText;
         private string _logText;
+        private bool _shouldWriteToLogFile;
 
         public OutputViewModel()
         {
             LogText = Logger.ReadLog();
             OutputSink.WriteLineEvent += (sender, text) => AppendOutput(text);
+            OpenLogsInExplorerCommand = new SimpleCommand(_ => OnOpenLogsInExplorer());
+            ShouldWriteToLogFile = true;
+        }
+        
+        public ICommand OpenLogsInExplorerCommand { get; }
+
+        public bool ShouldWriteToLogFile
+        {
+            get => _shouldWriteToLogFile;
+            set => RaiseAndSetIfChanged(ref _shouldWriteToLogFile, value);
         }
 
         public string LogText
@@ -32,7 +46,28 @@ namespace GUI.Output
         private void AppendOutput(string text)
         {
             OutputText += text;
-            LogText += Logger.WriteToLog(text.Trim()) + "\n";
+            
+            if (ShouldWriteToLogFile)
+                LogText += Logger.WriteToLog(text.Trim()) + "\n";
+        }
+
+        private void OnOpenLogsInExplorer()
+        {
+            var folderPath = Logger.GetLogFolderPath();
+
+            if (Directory.Exists(folderPath))
+            {
+                var startInfo = new ProcessStartInfo
+                {
+                    Arguments = folderPath,
+                    FileName = "explorer.exe"
+                };
+                Process.Start(startInfo);
+            }
+            else
+            {
+                AppendOutput("No output file exists yet!");
+            }
         }
     }
 }

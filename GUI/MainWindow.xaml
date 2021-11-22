@@ -18,6 +18,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="4*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="1*"/>
             
         </Grid.RowDefinitions>
@@ -25,8 +26,8 @@
         <TextBlock Text="Advent Of Code Manager"
                    Margin="10,10"
                    Style="{StaticResource TextBlock.Title}"
-                   Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0"/>
-        <Grid Grid.Row="1">
+                   Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0"/>
+        <Grid Grid.Row="1" Grid.Column="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
@@ -42,11 +43,7 @@
                 <Button Content="Solve Part 2" Width="200" Height="80" Margin="100,0" Command="{Binding SolvePartCommand}" CommandParameter="2"/>
             </StackPanel>
         </Grid>
-
-
-
-
-
+        
         <TabControl Grid.Row="1" Grid.Column="1" Style="{StaticResource TabControl.Normal}">
             <TabItem Header="Output" Style="{StaticResource TabItem.Normal}">
 
@@ -64,6 +61,18 @@
                          Text="{Binding OutputViewModel.LogText}"/>
             </TabItem>
         </TabControl>
+        
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            
+            <CheckBox Content="Save logs to file" 
+                      Foreground="White" 
+                      Margin="5,5"
+                      IsChecked="{Binding OutputViewModel.ShouldWriteToLogFile}"/>
+            <Button Content="Open log location" 
+                    Margin="5,5"
+                    Command="{Binding OutputViewModel.OpenLogsInExplorerCommand}"/>
+            
+        </StackPanel>
 
     </Grid>
 </Window>
