@@ -24,7 +24,7 @@ namespace GUI.Output
             set => RaiseAndSetIfChanged(ref _outputText, value);
         }
 
-        internal void ClearOuputText()
+        internal void ClearOutputText()
         {
             OutputText = string.Empty;
         }

@@ -12,15 +12,22 @@ namespace GUI.Output
         /// <returns>Line that was written with accompanying timestamp</returns>
         internal static string WriteToLog(string message)
         {
-            string timestamp = DateTime.UtcNow.ToString("yyyy/MM/dd HH:mm:ss");
+            var folderPath = GetLogFolderPath();
+            var filePath = Path.Combine(folderPath, _filename);
+            
+            var timestamp = DateTime.UtcNow.ToString("yyyy/MM/dd HH:mm:ss");
             var text = $"{timestamp} | {message}";
-            if (!File.Exists(_filename))
+            
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+            
+            if (!File.Exists(filePath))
             {
                 // Create a file to write to.
-                File.Create(_filename).Close();
+                File.Create(filePath).Close();
             }
             
-            using (StreamWriter sw = File.AppendText(_filename))
+            using (var sw = File.AppendText(filePath))
             {
                 sw.WriteLine(text);
             }
@@ -30,15 +37,24 @@ namespace GUI.Output
 
         internal static string ReadLog()
         {
+            var folderPath = GetLogFolderPath();
+            var filePath = Path.Combine(folderPath, _filename);
+            
             var text = string.Empty;
-            if (File.Exists(_filename))
+            if (File.Exists(filePath))
             {
-                using (StreamReader sr = new StreamReader(_filename))
+                using (var sr = new StreamReader(filePath))
                 {
                     text = sr.ReadToEnd();
                 }
             }
             return text;
+        }
+
+        internal static string GetLogFolderPath()
+        {
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            return Path.Combine(appDataPath, "AoCManager", "Logs");
         }
     }
 }

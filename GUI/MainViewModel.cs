@@ -32,7 +32,7 @@ namespace GUI
         
         private void OnSolvePartPressed(object args)
         {
-            OutputViewModel.ClearOuputText();
+            OutputViewModel.ClearOutputText();
             if (SelectedPuzzleDay == PuzzleDays.None)
             {
                 OutputSink.WriteLine($"{SelectedPuzzleDay}");
