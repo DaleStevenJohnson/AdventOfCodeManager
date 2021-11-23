@@ -6,6 +6,7 @@ namespace GUI.Constants
 {
     internal enum PuzzleYears
     {
+        None = 0,
         Year2015 = 2015,
         Year2016 = 2016,
         Year2017 = 2017,

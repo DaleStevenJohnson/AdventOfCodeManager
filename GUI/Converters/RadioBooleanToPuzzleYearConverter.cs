@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Text;
 using System.Windows.Data;
 using GUI.Constants;
 
 namespace GUI.Converters
 {
-    public class RadioBooleanToPropertyConverter : IValueConverter
+    class RadioBooleanToPuzzleYearConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return ((PuzzleDays)value == (PuzzleDays)parameter);
+            return ((PuzzleYears)value == (PuzzleYears)parameter);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -17,4 +19,5 @@ namespace GUI.Converters
             return (bool)value ? parameter : Binding.DoNothing;
         }
     }
+    
 }

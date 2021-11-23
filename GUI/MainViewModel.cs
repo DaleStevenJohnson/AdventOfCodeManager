@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using GUI.Constants;
+using GUI.DatePicker;
 using GUI.Helpers;
 using GUI.Output;
 
@@ -8,37 +9,27 @@ namespace GUI
     internal class MainViewModel : ObservableObject
     {
         private string _outputText = string.Empty;
-        private PuzzleDays _selectedPuzzleDay;
 
         public ICommand SolvePartCommand { get; }
-        public MainViewModel(OutputViewModel outputViewModel)
+        public MainViewModel(OutputViewModel outputViewModel, DatePickerViewModel datepickerViewModel)
         {
+            DatePickerViewModel = datepickerViewModel;
             OutputViewModel = outputViewModel;
-            SelectedPuzzleDay = PuzzleDays.None;
             SolvePartCommand = new SimpleCommand(partNumber => OnSolvePartPressed(partNumber));
         }
 
         public OutputViewModel OutputViewModel { get; }
-
-        public PuzzleDays SelectedPuzzleDay 
-        { 
-            get => _selectedPuzzleDay; 
-            set => RaiseAndSetIfChanged(ref _selectedPuzzleDay, value); 
-        }
-
-       
-        
-
+        public DatePickerViewModel DatePickerViewModel { get; }        
         
         private void OnSolvePartPressed(object args)
         {
             OutputViewModel.ClearOutputText();
-            if (SelectedPuzzleDay == PuzzleDays.None)
+            if (DatePickerViewModel.SelectedPuzzleDay == PuzzleDays.None)
             {
-                OutputSink.WriteLine($"{SelectedPuzzleDay}");
+                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleDay}");
             }
             else
-                OutputSink.WriteLine($"{SelectedPuzzleDay} Part {args}");
+                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleDay} Part {args}");
         }
 
 

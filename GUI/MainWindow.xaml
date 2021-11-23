@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
+        xmlns:datePicker="clr-namespace:GUI.DatePicker"
         mc:Ignorable="d"
         d:DataContext="{Binding Source={d:DesignInstance Type=local:MainViewModel}}"
         Title="MainWindow" Height="1080" Width="1920">
@@ -39,7 +40,12 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <local:PuzzleDaySelector Grid.Row="1"/>
+
+
+
+            <datePicker:PuzzleYearSelector DataContext="{Binding DatePickerViewModel}" Grid.Row="0"/>
+            <datePicker:PuzzleDaySelector DataContext="{Binding DatePickerViewModel}" Grid.Row="1"/>
+            
             <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="Solve Part 1" 
                         Width="200" Height="80" 

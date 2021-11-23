@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using GUI.DatePicker;
 using GUI.Output;
 
 namespace GUI.DependencyInjection
@@ -9,6 +10,7 @@ namespace GUI.DependencyInjection
         {
             builder.RegisterType<MainViewModel>().SingleInstance();
             builder.RegisterType<OutputViewModel>().SingleInstance();
+            builder.RegisterType<DatePickerViewModel>().SingleInstance();
         }
     }
 }
