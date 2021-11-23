@@ -24,5 +24,9 @@ namespace GUI.Constants
         Year2029 = 2029,
         Year2030 = 2030,
         Year2031 = 2031,
+        Year2032 = 2032,
+        Year2033 = 2033,
+        Year2034 = 2034,
+        Year2035 = 2035,
     }
 }
