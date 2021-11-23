@@ -54,23 +54,50 @@
             </TabItem>
 
             <TabItem Header="Log" Style="{StaticResource TabItem.Normal}">
+                <Grid>
+                    <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
+                             Margin="20,0"
+                             Style="{StaticResource TextBox.Output}"
+                             Text="{Binding OutputViewModel.LogText}"/>
 
-                <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True"
-                         Margin="20,0"
-                         Style="{StaticResource TextBox.Output}"
-                         Text="{Binding OutputViewModel.LogText}"/>
+                    <Button HorizontalAlignment="Right" Width="24"
+                            VerticalAlignment="Top" Height="24"
+                            Margin="0,10,30,0"
+                            Command="{Binding OutputViewModel.ClearLogsCommand}">
+                        <Button.Style>
+                            <Style TargetType="Button" BasedOn="{StaticResource ButtonOverride}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="{StaticResource Images.Cancel.White}"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="true">
+                                        <Setter Property="Background" Value="{StaticResource Images.Cancel.Red}"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                                <Setter Property="Background" Value="{StaticResource Images.Cancel.Black}"/>
+                                <Setter Property="BorderBrush" Value="Transparent"/>
+                            </Style>
+                        </Button.Style>
+                        
+                    </Button>
+                </Grid>
+
             </TabItem>
         </TabControl>
         
-        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="25,5" Width="935"  Orientation="Horizontal" HorizontalAlignment="Left">
             
             <CheckBox Content="Save logs to file" 
                       Foreground="White" 
-                      Margin="5,5"
+                      Margin="25,0"
+                      VerticalAlignment="Center"
                       IsChecked="{Binding OutputViewModel.ShouldWriteToLogFile}"/>
+            
             <Button Content="Open log location" 
-                    Margin="5,5"
+                    Margin="5,0"
+                    VerticalAlignment="Center"
                     Command="{Binding OutputViewModel.OpenLogsInExplorerCommand}"/>
+            
             
         </StackPanel>
 

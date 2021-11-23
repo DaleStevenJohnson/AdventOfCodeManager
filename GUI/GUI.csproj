@@ -47,6 +47,9 @@
     <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-SemiBold.ttf" />
     <None Remove="Assets\Fonts\NotoSansMono_SemiCondensed-Thin.ttf" />
     <None Remove="Assets\Fonts\SyneMono-Regular.ttf" />
+    <None Remove="Assets\Images\backspace-black.png" />
+    <None Remove="Assets\Images\backspace-redfill.png" />
+    <None Remove="Assets\Images\backspace.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -95,6 +98,15 @@
     <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-SemiBold.ttf" />
     <Resource Include="Assets\Fonts\NotoSansMono_SemiCondensed-Thin.ttf" />
     <Resource Include="Assets\Fonts\SyneMono-Regular.ttf" />
+    <Content Include="Assets\Images\backspace-black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\backspace-redfill.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\backspace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

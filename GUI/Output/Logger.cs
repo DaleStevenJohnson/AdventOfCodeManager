@@ -35,6 +35,14 @@ namespace GUI.Output
             return text;
         }
 
+        internal static void ClearLogFile()
+        {
+            var folderPath = GetLogFolderPath();
+            var filePath = Path.Combine(folderPath, _filename);
+            if (File.Exists(filePath))
+                File.WriteAllText(filePath, string.Empty);
+        }
+
         internal static string ReadLog()
         {
             var folderPath = GetLogFolderPath();

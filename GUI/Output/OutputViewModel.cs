@@ -16,10 +16,18 @@ namespace GUI.Output
             LogText = Logger.ReadLog();
             OutputSink.WriteLineEvent += (sender, text) => AppendOutput(text);
             OpenLogsInExplorerCommand = new SimpleCommand(_ => OnOpenLogsInExplorer());
+            ClearLogsCommand = new SimpleCommand(_ => OnClearLogs());
             ShouldWriteToLogFile = true;
         }
-        
+
+        private void OnClearLogs()
+        {
+            LogText = string.Empty;
+            Logger.ClearLogFile();
+        }
+
         public ICommand OpenLogsInExplorerCommand { get; }
+        public ICommand ClearLogsCommand { get; }
 
         public bool ShouldWriteToLogFile
         {
