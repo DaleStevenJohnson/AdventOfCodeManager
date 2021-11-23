@@ -12,17 +12,25 @@
     <UserControl.Resources>
         <converters:RadioBooleanToPropertyConverter x:Key="RadioBooleanToPropertyConverter"/>
         
-        <Style x:Key="RadioButton.TextOnly" TargetType="RadioButton" BasedOn="{StaticResource {x:Type ToggleButton}}">
+        <Style x:Key="RadioButton.TextOnly" TargetType="RadioButton" BasedOn="{StaticResource ToggleButtonOverride}">
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="GroupName" Value="DayNumber"/>
             <Setter Property="FontSize" Value="30"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="LightGray"/>
             <Setter Property="FontFamily" Value="{StaticResource Festive}"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Width" Value="50"/>
             <Setter Property="Height" Value="50"/>
-            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Goldenrod"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="BorderBrush" Value="Goldenrod"/>
+                </Trigger>
+            </Style.Triggers>
 
         </Style>
     </UserControl.Resources>
