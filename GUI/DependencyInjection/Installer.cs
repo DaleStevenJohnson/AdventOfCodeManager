@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using GUI.Output;
 
-namespace GUI
+namespace GUI.DependencyInjection
 {
     internal class Installer : Module
     {

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI"
+             
              xmlns:converters="clr-namespace:GUI.Converters"
              xmlns:constants="clr-namespace:GUI.Constants"
              mc:Ignorable="d" 
