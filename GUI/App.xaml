@@ -17,23 +17,7 @@
         <FontFamily x:Key="SyneMono">pack://application:,,,/Assets/Fonts/#SyneMono</FontFamily>
         <FontFamily x:Key="NotoSansMono">pack://application:,,,/Assets/Fonts/#NotoSansMono</FontFamily>
 
-        <Style x:Key="FocusVisual1">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" StrokeDashArray="1 2" SnapsToDevicePixels="true" StrokeThickness="1" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <SolidColorBrush x:Key="Button.Static.Background1" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border1" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background1" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border1" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background1" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border1" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background1" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border1" Color="#FFADB2B5"/>
+        
         <SolidColorBrush x:Key="Button.Disabled.Foreground1" Color="#FF838383"/>
 
         <Style x:Key="RadioButton.TextOnly" TargetType="RadioButton" BasedOn="{StaticResource ToggleButtonOverride}">
@@ -93,6 +77,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
         <Style x:Key="TextBox.Output" TargetType="TextBox">
             <Setter Property="Background" Value="DarkGray"/>
             <Setter Property="Foreground" Value="Green"/>
@@ -101,8 +86,6 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
         </Style>
-
-        
 
         <Style x:Key="TabItem.Normal" TargetType="{x:Type TabItem}">
             <Setter Property="Foreground" Value="DarkGray"/>
@@ -156,24 +139,7 @@
             <Setter Property="FontWeight" Value="Regular"/>
         </Style>
 
-        <Style x:Key="FocusVisual">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" StrokeDashArray="1 2" SnapsToDevicePixels="true" StrokeThickness="1" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        
         
         <Style x:Key="ButtonOverride" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
