@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GUI
+namespace GUI.Output
 {
     public static class OutputSink
     {

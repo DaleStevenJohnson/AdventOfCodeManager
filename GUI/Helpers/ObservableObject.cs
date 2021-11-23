@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace TeacherPlanner.Helpers
+namespace GUI.Helpers
 {
 
     public abstract class ObservableObject : INotifyPropertyChanged

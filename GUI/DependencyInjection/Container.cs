@@ -1,7 +1,7 @@
 ﻿using System;
 using Autofac;
 
-namespace GUI
+namespace GUI.DependencyInjection
 {
     internal static class Container
     {

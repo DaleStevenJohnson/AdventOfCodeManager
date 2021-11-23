@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Autofac;
+using GUI.DependencyInjection;
 
 namespace GUI
 {
