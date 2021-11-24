@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GUI.Constants
+﻿namespace GUI.Constants
 {
     internal enum PuzzleDays
     {

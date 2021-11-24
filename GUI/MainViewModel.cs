@@ -8,8 +8,6 @@ namespace GUI
 {
     internal class MainViewModel : ObservableObject
     {
-        private string _outputText = string.Empty;
-
         public ICommand SolvePartCommand { get; }
         public MainViewModel(OutputViewModel outputViewModel, DatePickerViewModel datepickerViewModel)
         {
