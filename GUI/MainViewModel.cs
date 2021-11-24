@@ -24,10 +24,10 @@ namespace GUI
             OutputViewModel.ClearOutputText();
             if (DatePickerViewModel.SelectedPuzzleDay == PuzzleDays.None)
             {
-                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleDay}");
+                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleYear} {DatePickerViewModel.SelectedPuzzleDay}");
             }
             else
-                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleDay} Part {args}");
+                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleYear} {DatePickerViewModel.SelectedPuzzleDay} Part {args}");
         }
 
 
