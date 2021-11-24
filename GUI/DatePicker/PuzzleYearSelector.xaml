@@ -27,9 +27,46 @@
         </Grid.RowDefinitions>
 
         <RadioButton Grid.Column="0" Grid.Row="0"
-                     Content="1"
+                     Content="2015"
                      Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
                      IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
             ConverterParameter={x:Static constants:PuzzleYears.Year2015}}"/>
+        <RadioButton Grid.Column="1" Grid.Row="0"
+                     Content="2016"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2016}}"/>
+        <RadioButton Grid.Column="2" Grid.Row="0"
+                     Content="2017"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2017}}"/>
+        <RadioButton Grid.Column="3" Grid.Row="0"
+                     Content="2018"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2018}}"/>
+        <RadioButton Grid.Column="4" Grid.Row="0"
+                     Content="2019"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2019}}"/>
+        <RadioButton Grid.Column="5" Grid.Row="0"
+                     Content="2020"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2020}}"/>
+        <RadioButton Grid.Column="6" Grid.Row="0"
+                     Content="2021"
+                     Style="{StaticResource RadioButton.TextOnly}"
+                     GroupName="PuzzleYearsRadios"
+                     IsChecked="{Binding SelectedPuzzleYear, Converter={StaticResource RadioBooleanToPuzzleYearConverter}, 
+            ConverterParameter={x:Static constants:PuzzleYears.Year2021}}"/>
     </Grid>
 </UserControl>

@@ -7,7 +7,7 @@ using GUI.Constants;
 
 namespace GUI.Converters
 {
-    class RadioBooleanToPuzzleYearConverter : IValueConverter
+    public class RadioBooleanToPuzzleYearConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
