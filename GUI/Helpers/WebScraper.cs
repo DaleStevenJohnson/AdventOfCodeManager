@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using System.Web;
 using HtmlAgilityPack;
@@ -8,7 +7,7 @@ namespace GUI.Helpers
 {
     public static class WebScraper
     {
-        public static string GetHTMLString(string url)
+        public static string GetHtmlString(string url)
         {
             // Taken from comment on this thread https://stackoverflow.com/questions/4758283/reading-data-from-a-website-using-c-sharp
             System.Net.WebClient wc = new System.Net.WebClient();
@@ -16,7 +15,7 @@ namespace GUI.Helpers
             return webData;
         }
 
-        public static string RemoveHTMLTagsFromString(string htmlString)
+        public static string RemoveHtmlTagsFromString(string htmlString)
         {
             HtmlDocument doc = new HtmlDocument();
             doc.LoadHtml(htmlString);
@@ -33,8 +32,8 @@ namespace GUI.Helpers
         public static string GetChallengeText(string year, string day)
         {
             var url = $"https://adventofcode.com/{year}/day/{day}";
-            var htmlString = GetHTMLString(url);
-            var plainText = RemoveHTMLTagsFromString(htmlString);
+            var htmlString = GetHtmlString(url);
+            var plainText = RemoveHtmlTagsFromString(htmlString);
             // Todo - chop plain text into the two individual challenges and return as string[2]
             return plainText;
         }

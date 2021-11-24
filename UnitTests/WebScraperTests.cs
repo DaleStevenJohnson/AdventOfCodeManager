@@ -7,12 +7,12 @@ namespace UnitTests
     public class WebScraperTests
     {
         [TestMethod]
-        public void GetTextFromHTML()
+        public void GetTextFromHtml()
         {
             var url = "https://adventofcode.com/2018/day/1";
             var title = "Advent of Code";
-            string html = WebScraper.GetHTMLString(url);
-            var text = WebScraper.RemoveHTMLTagsFromString(html);
+            string html = WebScraper.GetHtmlString(url);
+            var text = WebScraper.RemoveHtmlTagsFromString(html);
             Assert.AreEqual(title, text.Substring(0, title.Length));
         }
     }
