@@ -1,17 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 using System.Windows.Data;
 using GUI.Constants;
 
 namespace GUI.Converters
 {
-    public class RadioBooleanToPuzzleYearConverter : IValueConverter
+    public class RadioBooleanToPuzzleDateConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return ((PuzzleYears)value == (PuzzleYears)parameter);
+            return value switch
+            {
+                PuzzleDays days => days == (PuzzleDays) parameter,
+                PuzzleYears years => years == (PuzzleYears) parameter,
+                _ => false
+            };
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -19,5 +22,4 @@ namespace GUI.Converters
             return (bool)value ? parameter : Binding.DoNothing;
         }
     }
-    
 }

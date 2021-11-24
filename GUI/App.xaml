@@ -6,9 +6,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <converters:RadioBooleanToPuzzleDayConverter x:Key="RadioBooleanToPuzzleDayConverter"/>
-        <converters:RadioBooleanToPuzzleYearConverter x:Key="RadioBooleanToPuzzleYearConverter"/>
-
+        <converters:RadioBooleanToPuzzleDateConverter x:Key="RadioBooleanToPuzzleDateConverter"/>
 
         <ImageBrush x:Key="Images.Cancel.White" ImageSource="/Assets/Images/backspace.png" Stretch="Uniform"/>
         <ImageBrush x:Key="Images.Cancel.Black" ImageSource="/Assets/Images/backspace-black.png" Stretch="Uniform"/>

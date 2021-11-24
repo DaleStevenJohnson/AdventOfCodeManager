@@ -29,31 +29,31 @@
                      Content="1"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day1}}"/>
         <RadioButton Grid.Column="1" Grid.Row="0"
                      Content="2"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day2}}"/>
         <RadioButton Grid.Column="2" Grid.Row="0"
                      Content="3"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day3}}"/>
         <RadioButton Grid.Column="3" Grid.Row="0"
                      Content="4"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day4}}"/>
         <RadioButton Grid.Column="4" Grid.Row="0"
                      Content="5"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day5}}"/>
         
         <!-- 6 - 10 -->
@@ -61,31 +61,31 @@
                      Content="6"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day6}}"/>
         <RadioButton Grid.Column="1" Grid.Row="1"
                      Content="7"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day7}}"/>
         <RadioButton Grid.Column="2" Grid.Row="1"
                      Content="8"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day8}}"/>
         <RadioButton Grid.Column="3" Grid.Row="1"
                      Content="9"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day9}}"/>
         <RadioButton Grid.Column="4" Grid.Row="1"
                      Content="10"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day10}}"/>
 
         <!-- 11 - 15 -->
@@ -93,31 +93,31 @@
                      Content="11"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day11}}"/>
         <RadioButton Grid.Column="1" Grid.Row="2"
                      Content="12"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day12}}"/>
         <RadioButton Grid.Column="2" Grid.Row="2"
                      Content="13"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day13}}"/>
         <RadioButton  Grid.Column="3" Grid.Row="2"
                      Content="14"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day14}}"/>
         <RadioButton Grid.Column="4" Grid.Row="2"
                      Content="15"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day15}}"/>
 
         <!-- 16 - 20 -->
@@ -125,31 +125,31 @@
                      Content="16"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day16}}"/>
         <RadioButton Grid.Column="1" Grid.Row="3"
                      Content="17"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day17}}"/>
         <RadioButton Grid.Column="2" Grid.Row="3"
                      Content="18"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day18}}"/>
         <RadioButton Grid.Column="3" Grid.Row="3"
                      Content="19"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day19}}"/>
         <RadioButton Grid.Column="4" Grid.Row="3"
                      Content="20"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day20}}"/>
 
         <!-- 21 - 25 -->
@@ -157,31 +157,31 @@
                      Content="21"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day21}}"/>
         <RadioButton Grid.Column="1" Grid.Row="4"
                      Content="22"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day22}}"/>
         <RadioButton Grid.Column="2" Grid.Row="4"
                      Content="23"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day23}}"/>
         <RadioButton Grid.Column="3" Grid.Row="4"
                      Content="24"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day24}}"/>
         <RadioButton Grid.Column="4" Grid.Row="4"
                      Content="25"
                      Style="{StaticResource RadioButton.TextOnly}"
                      GroupName="PuzzleDaysRadios"
-                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDayConverter}, 
+                     IsChecked="{Binding SelectedPuzzleDay, Converter={StaticResource RadioBooleanToPuzzleDateConverter}, 
             ConverterParameter={x:Static constants:PuzzleDays.Day25}}"/>
 
     </Grid>
