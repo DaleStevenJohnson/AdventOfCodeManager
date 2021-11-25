@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Text;
+using System.Windows.Input;
 using GUI.Constants;
 using GUI.DatePicker;
 using GUI.Helpers;
@@ -13,23 +14,38 @@ namespace GUI
         {
             DatePickerViewModel = datepickerViewModel;
             OutputViewModel = outputViewModel;
-            SolvePartCommand = new SimpleCommand(partNumber => OnSolvePartPressed(partNumber));
+            SolvePartCommand = new SimpleCommand(OnSolvePartPressed);
         }
 
         public OutputViewModel OutputViewModel { get; }
-        public DatePickerViewModel DatePickerViewModel { get; }        
-        
+        public DatePickerViewModel DatePickerViewModel { get; }
+
         private void OnSolvePartPressed(object args)
         {
             OutputViewModel.ClearOutputText();
-            if (DatePickerViewModel.SelectedPuzzleDay == PuzzleDays.None)
+            var sb = new StringBuilder("Selected ");
+
+            sb.Append(DatePickerViewModel.SelectedPuzzleYear == PuzzleYears.None
+                ? "No Year, "
+                : $"{DatePickerViewModel.SelectedPuzzleYear}, ");
+
+            sb.Append(DatePickerViewModel.SelectedPuzzleDay == PuzzleDays.None
+                ? "No Day, "
+                : $"{DatePickerViewModel.SelectedPuzzleDay}, ");
+
+            sb.Append($"Part {args}");
+
+            OutputSink.WriteLine(sb.ToString());
+
+            if (DatePickerViewModel.SelectedPuzzleDay == PuzzleDays.None ||
+                DatePickerViewModel.SelectedPuzzleYear == PuzzleYears.None)
             {
-                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleYear} {DatePickerViewModel.SelectedPuzzleDay}");
+                OutputSink.WriteLine("You need to select both a year and a day to solve a puzzle!");
+                return;
             }
-            else
-                OutputSink.WriteLine($"{DatePickerViewModel.SelectedPuzzleYear} {DatePickerViewModel.SelectedPuzzleDay} Part {args}");
+            
+            // TODO: Actually hook in to solve the puzzle I guess
+            OutputSink.WriteLine("Puzzle solution is: \n ~Answer~");
         }
-
-
     }
 }
